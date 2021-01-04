@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background: #eee;
+    box-shadow: 0px 0px 5px 3px #ccc;
+    display: flex;
+    position: sticky;
+    top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-wrap {}
+.logo {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.logo h5 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-header-wrap {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 10px;
+}
+.main-header-first {
+    flex: 1;
+} 
+.main-header-wrap .pillers {
+    display: flex;
+}
+.main-header-wrap .pillers i {
+    padding: 10px;
+    cursor: pointer;
+}
+.main-header-wrap .pillers input {
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    width: 300px;
+    border-radius: 30px;
+    height: 35px;
+}
+.main-header-wrap .pillers img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Sidebar */
+.sidebar-wrap {
+    position: fixed;
+    left: 0;
+    top: 71px;
+    bottom: 0;
+    z-index: 1;
+    background: #eee;
+    width: 218px;
+    border-right: 1px solid #ccc;
+    box-shadow: 0px 3px 9px 1px #ccc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-wrap .sidebar {}
+.sidebar-wrap .sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-wrap .sidebar ul li {}
+.sidebar-wrap .sidebar ul li a {
+    padding: 15px 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.sidebar-wrap .sidebar ul li a i {
+    font-weight: 300;
+    margin-right: 10px;
+    width: 30px;
+    font-size: 19px;
 }
